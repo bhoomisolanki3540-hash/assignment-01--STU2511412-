@@ -11,3 +11,11 @@
 ### 3. Delete Anomaly
 **Example:** If we delete the order `ORD1075` (Row 9), we lose all record of the customer Vikram Singh (`C005`).
 **Reference:** Vikram Singh only appears in that one row. Deleting the order record accidentally deletes our only copy of his name, email, and city.
+
+## Normalization Justification
+
+I refute the manager's position that a single table is simpler. While it may appear easier to read at a glance, it is a liability for a growing business. 
+
+Using our dataset as an example, the office address for the Mumbai HQ is repeated identically across every order handled by Deepak Joshi. In a real-world scenario with 100,000 orders, this redundancy wastes massive amounts of storage. More importantly, it invites "Data Corruption." If a clerk accidentally types "Nariman Pt" instead of "Nariman Point" in just one row, a simple search for all Mumbai orders will return incorrect results.
+
+By normalizing to 3NF, we ensure "Data Integrity." We store the customer's info once, the product's price once, and the rep's address once. This makes the system faster, prevents the anomalies identified above, and allows the company to scale without fear of losing or breaking their data.
