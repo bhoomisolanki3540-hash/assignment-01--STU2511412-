@@ -1,1 +1,44 @@
-
+[
+  {
+    "product_id": "E101",
+    "name": "UltraBook Pro 15",
+    "category": "Electronics",
+    "price": 85000,
+    "attributes": {
+      "warranty_years": 2,
+      "voltage": "220V",
+      "specs": {
+        "ram": "16GB",
+        "storage": "512GB SSD",
+        "processor": "Intel i7"
+      }
+    },
+    "tags": ["laptop", "work", "high-performance"]
+  },
+  {
+    "product_id": "C202",
+    "name": "Classic Denim Jacket",
+    "category": "Clothing",
+    "price": 3500,
+    "attributes": {
+      "material": "Organic Cotton",
+      "sizes": ["S", "M", "L", "XL"],
+      "color_variants": ["Indigo", "Black"]
+    }
+  },
+  {
+    "product_id": "G303",
+    "name": "Premium Greek Yogurt",
+    "category": "Groceries",
+    "price": 120,
+    "attributes": {
+      "expiry_date": "2024-12-15",
+      "weight": "500g",
+      "nutritional_info": {
+        "calories": 150,
+        "protein": "12g",
+        "fat": "4g"
+      }
+    }
+  }
+]
